@@ -19,12 +19,13 @@
 #     print('my myvalidation')
 
 import requests
+import pytest
 
 
-def git():
+def test_git():
     username = 'shankar5522'
     token = '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'
-    login = requests.get('https://api.github.com/search/repositories?q=github+api', auth=(username,token))
-
+    login = requests.get('https://api.github.com/search/repositories?q=github+api', auth=(username, token))
+    print('abs')
 
 git();
